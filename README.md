@@ -37,11 +37,13 @@ If this does not work, make sure you have the package `virtualenv` installed for
 
 ## Extract Audio Features
 
-To have features extracted from a series of audio files, `extract_mfcc.py` takes a list of file names as an argument:
+To have features extracted from a series of audio files, `extract_mfcc.py` takes a list of file names as an argument.
+
+For example:
 
     python3 extract/extract_mfcc.py path/file1.wav path/file2.wav
 
-
+For all audio files in a directory:
 
     python3 extract/extract_mfcc.py path/*
 
