@@ -7,7 +7,7 @@ all: virtualenv
 
 virtualenv:
 	if [ ! -e ${PIP} ]; then \
-	virtualenv -p python3 $(VIRTUALENV_DIR); \
+	python3 -m venv $(VIRTUALENV_DIR); \
 	fi
 	$(PIP) install --upgrade pip; \
 
